@@ -26,7 +26,7 @@ Track A destinations; Track B learned binaries remain held.
 
 ## Verification evidence
 
-- GitHub default branch head: `2329a60ee70a146b203ff23264e4c4e4d62044dc`.
+- GitHub default branch head: `68413c5` (full SHA verified with `git ls-remote`).
 - GitHub repository visibility: public.
 - Remote tree scan: no `.safetensors`, `.jsonl`, `.csv`, `.parquet`, `.pkl`, or
   `.pickle` paths.
