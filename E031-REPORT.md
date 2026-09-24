@@ -58,8 +58,20 @@ sanitized manifests, attribution, and audit files. Track B is held: the
 adapter and classifier head remain local for legal review. Hugging Face is not
 uploaded because authentication is absent and Track B is held.
 
+## Verified destinations
+
+- GitHub Track A repository:
+  https://github.com/MAJORminorStudio/e028-evidence-classifier-release
+- Public research study:
+  https://e028-evidence-classifier-study.orange-tern-3473.chatgpt.site/
+- Public article:
+  https://e028-evidence-classifier-study.orange-tern-3473.chatgpt.site/article.html
+
+The GitHub repository is public and its remote tree contains no raw data
+extensions or learned-weight binaries. Both site pages returned HTTP 200 after
+the public production deployment.
+
 ## Compute and cleanup
 
 E031 used no GPU. Final pod inventory must be recorded as `[]`. No E032 or
 training action was started.
-

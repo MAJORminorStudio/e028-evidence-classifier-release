@@ -12,8 +12,9 @@
    `scripts/train_qwen3_classifier.py` validates this contract and documents
    the audited project trainer invocation; E029 does not execute training.
 5. Run structural checks with `scripts/validate_artifact.py`. Actual model
-   forward inference requires CUDA-capable memory for the 8B base; use
-   `scripts/inference.py` with the supplied adapter and head.
+   forward inference requires CUDA-capable memory for the 8B base and a
+   separately authorized Track B adapter/head release. The public Track A
+   repository does not contain those learned binaries.
 
 The release does not duplicate base weights, raw source datasets, or the full
 83,065-row holdout predictions. E028 remains the immutable provenance record.

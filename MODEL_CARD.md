@@ -1,4 +1,8 @@
-# Qwen3-8B Evidence Classifier — E028 release candidate
+# Qwen3-8B Evidence Classifier — E028 Track A research release
+
+This public repository contains research materials only. The Qwen base,
+E028 adapter, and classifier head are not included. Model weights are pending
+license review; see the E031 audit files before any separate Track B release.
 
 ## Model identity
 
@@ -34,6 +38,7 @@ guarantees.
 
 ## Ethical and licensing considerations
 
-The adapter is a research artifact. Review the Qwen license and all source
-dataset licenses before redistribution. The package intentionally omits base
-weights and raw third-party rows.
+The adapter and classifier head are frozen research artifacts held locally for
+legal review. Review the Qwen license and all source dataset licenses before
+redistribution. This public Track A package intentionally omits base weights,
+learned binary weights, and raw third-party rows.

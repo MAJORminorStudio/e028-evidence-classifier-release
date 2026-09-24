@@ -96,23 +96,25 @@ composition problem.
 
 ## Release boundaries
 
-The staged package contains the adapter, classifier head, tokenizer/config,
-formatter and reproduction scripts, provenance manifests, aggregate metrics,
-figures, cards, and checksums. It does not contain the Qwen base weights or
-raw third-party rows. Users must obtain the pinned base and restricted source
-datasets from their authoritative locations.
+The Track A public package contains the tokenizer/config, formatter and
+reproduction scripts, provenance manifests, aggregate metrics, figures,
+cards, and checksums. It does not contain the Qwen base weights, raw
+third-party rows, adapter binary, or classifier-head binary. Users must obtain
+the pinned base and restricted source datasets from their authoritative
+locations. The learned artifacts remain local Track B files pending legal
+review.
 
 The E030 CUDA smoke reconstructed the package in a clean environment on one
 secure L40S. Three deterministic non-holdout cases—one per label—loaded the
 base, adapter, head, tokenizer, and formatter and completed successfully.
 This is a packaging smoke, not a rerun of the 83,065-example evaluation.
 
-Public publication remains gated by the manual license audit. The project code
-is Apache-2.0, and Qwen’s model card states Apache-2.0 for the base model, but
+E031 publishes the research materials as Track A. The project code is
+Apache-2.0, and Qwen’s model card states Apache-2.0 for the base model, but
 the learned adapter and classifier head have mixed-source training provenance
-that was not cleared for redistribution by an authoritative project-level
-grant. They remain staged locally as `UNCLEAR`; no public model upload or
-repository push is represented as complete.
+and the reviewed authoritative materials are silent on the specific learned-
+weight question. They remain staged locally as Track B artifacts pending legal
+review; no public model-weight upload is represented as complete.
 
 ## Conclusion
 

@@ -1,9 +1,12 @@
 # E031 publication URLs
 
-This file is updated by E031 after destination verification.
+Verified by E031:
 
-- GitHub research repository: pending final push verification.
-- Research study page: pending final deployment verification.
-- Article: included in the research study page.
+- GitHub research repository:
+  https://github.com/MAJORminorStudio/e028-evidence-classifier-release
+- Research study page:
+  https://e028-evidence-classifier-study.orange-tern-3473.chatgpt.site/
+- Article:
+  https://e028-evidence-classifier-study.orange-tern-3473.chatgpt.site/article.html
 - Model hub: not uploaded; weights are pending license review and local HF
   authentication is absent.

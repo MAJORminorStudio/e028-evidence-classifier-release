@@ -25,6 +25,12 @@ without raw rows, source text, base weights, adapter binary, or head binary.
 
 The public wording is: “Model weights pending license review.”
 
+The verified Track A destinations are:
+
+- GitHub: https://github.com/MAJORminorStudio/e028-evidence-classifier-release
+- Study: https://e028-evidence-classifier-study.orange-tern-3473.chatgpt.site/
+- Article: https://e028-evidence-classifier-study.orange-tern-3473.chatgpt.site/article.html
+
 ## Track B — hold
 
 The following remain local and are not pushed to the public repository or
@@ -42,4 +48,3 @@ Hugging Face CLI authentication is not present in this environment. E031 does
 not upload the model or weights and does not expose or request a token. If a
 later authorized Track B release is approved, the user must authenticate
 interactively and then perform a separate upload decision.
-
