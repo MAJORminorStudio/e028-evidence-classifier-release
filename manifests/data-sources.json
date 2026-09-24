@@ -1,0 +1,62 @@
+{
+  "dataset": "VitaminC",
+  "e025_firewall": "all E025 manifests were used only as opaque overlap references; E025 labels/predictions/errors/metrics were not read for selection",
+  "identity": "E028-data-sources-v1",
+  "license_files_and_checksums": [
+    {
+      "bytes": 5268,
+      "path": "data/raw/e025-sources/vitaminc/README.md",
+      "sha256": "8b1512acf12fa4d7e7ed152e7ce4d7077479f4f7d910fbf47c132c173589870e"
+    },
+    {
+      "bytes": 1068,
+      "path": "data/raw/e025-sources/vitaminc/LICENSE",
+      "sha256": "15670a797ea5bdffa4c9fcfaa1514a3646ca6cfb54364ac505bfadb1a2e6e49a"
+    },
+    {
+      "bytes": 529,
+      "path": "data/raw/e025-sources/vitaminc/DATA_LICENSE",
+      "sha256": "153a128e86c7d0e978243c8c8994dbb5fba9081a36f8d380cd1f5994699e369e"
+    },
+    {
+      "bytes": 513,
+      "path": "data/raw/e025-sources/vitaminc/vitaminc/LICENSE",
+      "sha256": "e5727854e203fc66d725caa6d8e97e541f64a906d1d15d19e63f32bb52134dd1"
+    },
+    {
+      "bytes": 198,
+      "path": "data/raw/e025-sources/vitaminc/vitaminc/README.txt",
+      "sha256": "aecc6e74b43865b1c8a3c9e044a296644badbf4ffd81adbb6d0ffc80a26256cd"
+    },
+    {
+      "bytes": 164411764,
+      "path": "data/raw/e025-sources/vitaminc/vitaminc/train.jsonl",
+      "sha256": "446163d81ec9b654d2514e8ba5b8f2e4bd8938342e34c98e7660fe05a8a3ca39"
+    },
+    {
+      "bytes": 27826242,
+      "path": "data/raw/e025-sources/vitaminc/vitaminc/dev.jsonl",
+      "sha256": "a3258bc959754c84bade150d3bf447fd9c91a529d93bb676f034fdafda5f26e5"
+    }
+  ],
+  "official_split_roles": {
+    "dev": "exact E026 development manifest reused",
+    "test": "frozen E025 external holdout; not used for training or selection",
+    "train": "candidate source for matched augmentation"
+  },
+  "prompt_contract": "fixed E023/E026 canonical prompt with one [evidence_0] item for VitaminC rows; no label or metadata leakage",
+  "raw_split_class_counts": {
+    "dev": {
+      "CONTRADICTED": 22528,
+      "INSUFFICIENT_EVIDENCE": 9042,
+      "SUPPORTED": 31484
+    },
+    "train": {
+      "CONTRADICTED": 131958,
+      "INSUFFICIENT_EVIDENCE": 52981,
+      "SUPPORTED": 185714
+    }
+  },
+  "repository_commit": "eb532922b88b199df68ed26afeb58dca5501b52f",
+  "selection": "E028 adds only matched VitaminC SUPPORTED rows; E026 C/IE rows and every original E023 row are retained byte-for-byte."
+}

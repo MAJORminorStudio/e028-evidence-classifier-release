@@ -1,0 +1,47 @@
+{
+  "adapter": "<remote-e028-workspace>/output/e028-primary-candidate/checkpoint-198/adapter",
+  "classifier_head": "<remote-e028-workspace>/output/e028-primary-candidate/checkpoint-198/classifier_head.safetensors",
+  "epoch": 2,
+  "global_step": 198,
+  "identity": "E028-checkpoint-manifest-v1",
+  "tokenizer": "<remote-e028-workspace>/output/e028-primary-candidate/checkpoint-198/tokenizer",
+  "validation_metrics": {
+    "eval_accuracy": 0.7435555555555555,
+    "eval_confusion_matrix": [
+      [
+        1263,
+        154,
+        83
+      ],
+      [
+        122,
+        1238,
+        140
+      ],
+      [
+        408,
+        247,
+        845
+      ]
+    ],
+    "eval_contradicted_f1": 0.7887862376553042,
+    "eval_contradicted_precision": 0.7553386211104332,
+    "eval_contradicted_recall": 0.8253333333333334,
+    "eval_insufficient_evidence_f1": 0.6580996884735203,
+    "eval_insufficient_evidence_precision": 0.7911985018726592,
+    "eval_insufficient_evidence_recall": 0.5633333333333334,
+    "eval_loss": 0.713392972946167,
+    "eval_macro_f1": 0.7379892048529425,
+    "eval_predicted_class_counts": {
+      "CONTRADICTED": 1639,
+      "INSUFFICIENT_EVIDENCE": 1068,
+      "SUPPORTED": 1793
+    },
+    "eval_runtime": 126.7804,
+    "eval_samples_per_second": 35.494,
+    "eval_steps_per_second": 8.874,
+    "eval_supported_f1": 0.7670816884300031,
+    "eval_supported_precision": 0.7044060234244284,
+    "eval_supported_recall": 0.842
+  }
+}

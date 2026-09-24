@@ -1,0 +1,96 @@
+{
+  "identity": "E030-cuda-smoke-v1",
+  "status": "PASS",
+  "scope": "release reconstruction only; three deterministic non-holdout cases; no training; no benchmark rerun",
+  "runtime": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA L40S",
+    "device": "cuda:0"
+  },
+  "base_model": {
+    "path": "<pinned-Qwen3-8B-Base>",
+    "revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4"
+  },
+  "release": {
+    "path": "<release-package>",
+    "adapter_sha256": "b8a6dfd754f1cb766d710697d03c5b26a8316abc085c9c1dc999b942e81e5f8c",
+    "classifier_head_sha256": "cea444d633653afbb0697c0357717fc0f6014b25bc0ca4965660807aee77c5a4",
+    "formatter_sha256": "75134353bbed6fe24104cc9afeb5d5e5c4b4defc130ea6cfba732bf2359af605",
+    "tokenizer_vocab_size": 151669,
+    "hidden_size": 4096,
+    "num_labels": 3
+  },
+  "formatter_parity": {
+    "status": "PASS",
+    "byte_equivalent": true
+  },
+  "cases": [
+    {
+      "case_id": "supported-01",
+      "claim": "The Eiffel Tower is located in Paris.",
+      "evidence": "[evidence_0] The Eiffel Tower is a wrought-iron lattice tower in Paris, France.",
+      "expected_label": "SUPPORTED",
+      "prompt": "Determine the relationship between the claim and the evidence.\nThe evidence may support the claim, contradict the claim, or be insufficient to decide.\n\nClaim:\nThe Eiffel Tower is located in Paris.\n\nEvidence:\n[evidence_0] The Eiffel Tower is a wrought-iron lattice tower in Paris, France.\n\nChoose exactly one class: SUPPORTED, CONTRADICTED, INSUFFICIENT_EVIDENCE.",
+      "prompt_sha256": "0bba0eee24d1cc5c2f4b9b580ce8cac741db081bdd591406f49ee57cbb184d24",
+      "prompt_token_count": 84,
+      "logits": {
+        "SUPPORTED": 0.9254494905471802,
+        "CONTRADICTED": -0.8262944221496582,
+        "INSUFFICIENT_EVIDENCE": -1.9106119871139526
+      },
+      "probabilities": {
+        "SUPPORTED": 0.811604380607605,
+        "CONTRADICTED": 0.1407899409532547,
+        "INSUFFICIENT_EVIDENCE": 0.04760565608739853
+      },
+      "predicted_label": "SUPPORTED",
+      "status": "PASS"
+    },
+    {
+      "case_id": "contradicted-01",
+      "claim": "The Eiffel Tower is located in London.",
+      "evidence": "[evidence_0] The Eiffel Tower is a wrought-iron lattice tower in Paris, France.",
+      "expected_label": "CONTRADICTED",
+      "prompt": "Determine the relationship between the claim and the evidence.\nThe evidence may support the claim, contradict the claim, or be insufficient to decide.\n\nClaim:\nThe Eiffel Tower is located in London.\n\nEvidence:\n[evidence_0] The Eiffel Tower is a wrought-iron lattice tower in Paris, France.\n\nChoose exactly one class: SUPPORTED, CONTRADICTED, INSUFFICIENT_EVIDENCE.",
+      "prompt_sha256": "09499fa83ef0c3dd6ed3cb70996d77e4e17bfc7839766a7f0e3a359c49f1931d",
+      "prompt_token_count": 84,
+      "logits": {
+        "SUPPORTED": -3.3637049198150635,
+        "CONTRADICTED": 3.4974801540374756,
+        "INSUFFICIENT_EVIDENCE": -1.471598744392395
+      },
+      "probabilities": {
+        "SUPPORTED": 0.0010393596021458507,
+        "CONTRADICTED": 0.9920661449432373,
+        "INSUFFICIENT_EVIDENCE": 0.006894409190863371
+      },
+      "predicted_label": "CONTRADICTED",
+      "status": "PASS"
+    },
+    {
+      "case_id": "insufficient-evidence-01",
+      "claim": "The Eiffel Tower was completed in 1889.",
+      "evidence": "[evidence_0] The Eiffel Tower is a wrought-iron lattice tower in Paris, France.",
+      "expected_label": "INSUFFICIENT_EVIDENCE",
+      "prompt": "Determine the relationship between the claim and the evidence.\nThe evidence may support the claim, contradict the claim, or be insufficient to decide.\n\nClaim:\nThe Eiffel Tower was completed in 1889.\n\nEvidence:\n[evidence_0] The Eiffel Tower is a wrought-iron lattice tower in Paris, France.\n\nChoose exactly one class: SUPPORTED, CONTRADICTED, INSUFFICIENT_EVIDENCE.",
+      "prompt_sha256": "b02ca5724b3eb0c305fd0e800844b7eaf227088c86836901a4f184c36d463b29",
+      "prompt_token_count": 88,
+      "logits": {
+        "SUPPORTED": -1.491880178451538,
+        "CONTRADICTED": -1.080238938331604,
+        "INSUFFICIENT_EVIDENCE": 1.5641998052597046
+      },
+      "probabilities": {
+        "SUPPORTED": 0.042099226266145706,
+        "CONTRADICTED": 0.06354005634784698,
+        "INSUFFICIENT_EVIDENCE": 0.8943607211112976
+      },
+      "predicted_label": "INSUFFICIENT_EVIDENCE",
+      "status": "PASS"
+    }
+  ],
+  "elapsed_seconds": 7.841168403625488
+}

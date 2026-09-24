@@ -1,0 +1,103 @@
+{
+  "after_existing_E026_opaque_e025_audit": 185077,
+  "audit_policy": "exact example-ID, exact/normalized claim, exact/normalized evidence, exact/normalized claim+evidence pair, and canonical prompt-hash overlap checks",
+  "e025_helper_exclusions": {
+    "duplicate_within_train_normalized_evidence": 184143,
+    "duplicate_within_train_normalized_pair": 1148,
+    "holdout_exact_evidence": 281,
+    "holdout_normalized_evidence": 4
+  },
+  "e025_labels_predictions_or_metrics_read": false,
+  "e025_manifest_summary": {
+    "manifest_files": [
+      {
+        "path": "experiments/E025_external_benchmark_suite_2026-09-23/manifests/AVERITEC.jsonl",
+        "rows": 462,
+        "sha256": "bb2eb66313566c711db809d95fe6e58f2ce01adcf7cd1a65ab310bf3f9f7e889"
+      },
+      {
+        "path": "experiments/E025_external_benchmark_suite_2026-09-23/manifests/FACTKG.jsonl",
+        "rows": 13266,
+        "sha256": "da5485ca9d4b87e1780e7eca79d385f153e900e03e1a62c4907251b132257367"
+      },
+      {
+        "path": "experiments/E025_external_benchmark_suite_2026-09-23/manifests/FEVER.jsonl",
+        "rows": 13198,
+        "sha256": "026d0e5acb0347e57613ace01f4adaae2ec3959b7fa858ed39c385f8613f0193"
+      },
+      {
+        "path": "experiments/E025_external_benchmark_suite_2026-09-23/manifests/FEVER2.jsonl",
+        "rows": 780,
+        "sha256": "2397687d9447019e7927bc3882a3a44b590bb3896a827d8f36e70780d35156aa"
+      },
+      {
+        "path": "experiments/E025_external_benchmark_suite_2026-09-23/manifests/SCIFACT.jsonl",
+        "rows": 188,
+        "sha256": "145b0108fda43e2ee2cbc2d3bf0f8c8f34d02721b44b4634ce0d4e14deb95ced"
+      },
+      {
+        "path": "experiments/E025_external_benchmark_suite_2026-09-23/manifests/VITAMINC.jsonl",
+        "rows": 55171,
+        "sha256": "99194cf39727bece4385dfabff4008ff42744f66ffed95bf58fcd2c1445facab"
+      }
+    ],
+    "unique_exact_evidence": 38010,
+    "unique_exact_pairs": 82334,
+    "unique_normalized_evidence": 37951,
+    "unique_normalized_pairs": 82325
+  },
+  "frozen_at": "2026-09-24T12:21:24Z",
+  "identity": "E028-contamination-audit-v1",
+  "invariants": {
+    "E025_VitaminC_test_used_only_as_opaque_hash_reference": true,
+    "E025_labels_predictions_errors_used_for_selection": false,
+    "no_selected_row_exact_or_normalized_ID_overlap": true,
+    "no_selected_row_exact_or_normalized_claim_overlap": true,
+    "no_selected_row_exact_or_normalized_evidence_overlap": true,
+    "no_selected_row_exact_or_normalized_pair_overlap": true,
+    "no_selected_row_prompt_hash_overlap": true
+  },
+  "raw_vitaminc_train_rows": 370653,
+  "selected": {
+    "class_counts": {
+      "SUPPORTED": 200
+    },
+    "revision_counts": {
+      "real": 100,
+      "synthetic": 100
+    },
+    "rows": 200
+  },
+  "selected_overlap_counts_against_blocked_references": {
+    "E025": {
+      "exact_claims": 0,
+      "exact_evidence": 0,
+      "exact_ids": 0,
+      "exact_pairs": 0,
+      "normalized_claims": 0,
+      "normalized_evidence": 0,
+      "normalized_ids": 0,
+      "normalized_pairs": 0,
+      "prompt_hashes": 0
+    },
+    "existing_E023_E026_rows": {
+      "exact_claims": 0,
+      "exact_evidence": 0,
+      "exact_ids": 0,
+      "exact_pairs": 0,
+      "normalized_claims": 0,
+      "normalized_evidence": 0,
+      "normalized_ids": 0,
+      "normalized_pairs": 0,
+      "prompt_hashes": 0
+    }
+  },
+  "strict_local_candidate_exclusions": {
+    "blocked_exact_claims": 167,
+    "blocked_exact_ids": 743,
+    "blocked_normalized_claims": 2,
+    "duplicate_within_e028_supported_exact_claims": 8629,
+    "duplicate_within_e028_supported_exact_ids": 74970,
+    "duplicate_within_e028_supported_normalized_claims": 15
+  }
+}

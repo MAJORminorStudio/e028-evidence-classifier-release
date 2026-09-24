@@ -1,0 +1,30 @@
+{
+  "E026_augmentation_class_counts": {
+    "CONTRADICTED": 200,
+    "INSUFFICIENT_EVIDENCE": 200
+  },
+  "E028_augmentation_class_counts": {
+    "SUPPORTED": 200
+  },
+  "base_E026_rows": 1376,
+  "base_model_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+  "class_counts": {
+    "CONTRADICTED": 349,
+    "INSUFFICIENT_EVIDENCE": 307,
+    "SUPPORTED": 920
+  },
+  "frozen_at": "2026-09-24T12:21:24Z",
+  "identity": "E028-training-manifest-v1",
+  "new_rows": 200,
+  "original_E023_class_counts": {
+    "CONTRADICTED": 149,
+    "INSUFFICIENT_EVIDENCE": 107,
+    "SUPPORTED": 720
+  },
+  "path": "<project-root>/experiments/E028_source_complete_vitaminc_2026-09-24/E028-TRAIN.jsonl",
+  "prompt_contract": "E023/E026 canonical claim/evidence prompt; public VitaminC rows use [evidence_0]; no label or metadata appended",
+  "rows": 1576,
+  "scientific_change": "add exactly 200 contamination-audited VitaminC SUPPORTED rows to the byte-preserved E026 training manifest",
+  "selection_protocol": "E026 stratified_select with E028 deterministic salt; 100 real + 100 synthetic; no E023/E026 rows removed",
+  "sha256": "51c79842320cac1742b010e27f327f9daaea8417bf34a73105a12f2c15b29674"
+}

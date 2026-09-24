@@ -1,0 +1,362 @@
+{
+  "E023_reference": {
+    "CHALLENGE": {
+      "accuracy": 1.0,
+      "confusion_matrix": {
+        "CONTRADICTED": {
+          "CONTRADICTED": 4,
+          "INSUFFICIENT_EVIDENCE": 0,
+          "SUPPORTED": 0
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 0,
+          "SUPPORTED": 0
+        },
+        "SUPPORTED": {
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 0,
+          "SUPPORTED": 0
+        }
+      },
+      "macro_f1": 0.3333333333333333,
+      "n": 4,
+      "per_class": {
+        "CONTRADICTED": {
+          "correct": 4,
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 4
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "correct": 0,
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 0
+        },
+        "SUPPORTED": {
+          "correct": 0,
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 0
+        }
+      }
+    },
+    "CORE": {
+      "accuracy": 1.0,
+      "confusion_matrix": {
+        "CONTRADICTED": {
+          "CONTRADICTED": 3,
+          "INSUFFICIENT_EVIDENCE": 0,
+          "SUPPORTED": 0
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 27,
+          "SUPPORTED": 0
+        },
+        "SUPPORTED": {
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 0,
+          "SUPPORTED": 219
+        }
+      },
+      "macro_f1": 1.0,
+      "n": 249,
+      "per_class": {
+        "CONTRADICTED": {
+          "correct": 3,
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 3
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "correct": 27,
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 27
+        },
+        "SUPPORTED": {
+          "correct": 219,
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 219
+        }
+      }
+    },
+    "MATCHED_SUPPORTED_CONTROLS": {
+      "accuracy": 1.0,
+      "confusion_matrix": {
+        "CONTRADICTED": {
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 0,
+          "SUPPORTED": 0
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 0,
+          "SUPPORTED": 0
+        },
+        "SUPPORTED": {
+          "CONTRADICTED": 0,
+          "INSUFFICIENT_EVIDENCE": 0,
+          "SUPPORTED": 4
+        }
+      },
+      "macro_f1": 0.3333333333333333,
+      "n": 4,
+      "per_class": {
+        "CONTRADICTED": {
+          "correct": 0,
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 0
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "correct": 0,
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 0
+        },
+        "SUPPORTED": {
+          "correct": 4,
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 4
+        }
+      }
+    }
+  },
+  "E028_selected": {
+    "aggregate": {
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          223,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          27
+        ]
+      ],
+      "macro_f1": 1.0,
+      "n": 257,
+      "per_class": {
+        "CONTRADICTED": {
+          "correct": 7,
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 7
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "correct": 27,
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 27
+        },
+        "SUPPORTED": {
+          "correct": 223,
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 223
+        }
+      },
+      "predicted_class_counts": {
+        "CONTRADICTED": 7,
+        "INSUFFICIENT_EVIDENCE": 27,
+        "SUPPORTED": 223
+      }
+    },
+    "groups": {
+      "CHALLENGE": {
+        "metrics": {
+          "accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": 0.3333333333333333,
+          "n": 4,
+          "per_class": {
+            "CONTRADICTED": {
+              "correct": 4,
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "correct": 0,
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "SUPPORTED": {
+              "correct": 0,
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            }
+          },
+          "predicted_class_counts": {
+            "CONTRADICTED": 4,
+            "INSUFFICIENT_EVIDENCE": 0,
+            "SUPPORTED": 0
+          }
+        },
+        "predictions_path": "<remote-e028-workspace>/E028-CHALLENGE-PREDICTIONS.jsonl"
+      },
+      "CORE": {
+        "metrics": {
+          "accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              219,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              27
+            ]
+          ],
+          "macro_f1": 1.0,
+          "n": 249,
+          "per_class": {
+            "CONTRADICTED": {
+              "correct": 3,
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 3
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "correct": 27,
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 27
+            },
+            "SUPPORTED": {
+              "correct": 219,
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 219
+            }
+          },
+          "predicted_class_counts": {
+            "CONTRADICTED": 3,
+            "INSUFFICIENT_EVIDENCE": 27,
+            "SUPPORTED": 219
+          }
+        },
+        "predictions_path": "<remote-e028-workspace>/E028-CORE-PREDICTIONS.jsonl"
+      },
+      "MATCHED_CONTROLS": {
+        "metrics": {
+          "accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "macro_f1": 0.3333333333333333,
+          "n": 4,
+          "per_class": {
+            "CONTRADICTED": {
+              "correct": 0,
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "correct": 0,
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "SUPPORTED": {
+              "correct": 4,
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            }
+          },
+          "predicted_class_counts": {
+            "CONTRADICTED": 0,
+            "INSUFFICIENT_EVIDENCE": 0,
+            "SUPPORTED": 4
+          }
+        },
+        "predictions_path": "<remote-e028-workspace>/E028-MATCHED_CONTROLS-PREDICTIONS.jsonl"
+      }
+    }
+  },
+  "identity": "E028-internal-regression-v1",
+  "interpretation": "E028 retains the exact E023 internal core behavior while restoring three-way VitaminC development performance; challenge/control groups are reported separately because their supports are single-class.",
+  "primary_checks": {
+    "all_internal_examples_correct": true,
+    "core_accuracy_preserved": true,
+    "core_contradicted_recall_preserved": true,
+    "core_insufficient_evidence_recall_preserved": true,
+    "e025_holdout_files_read_before_gate": false
+  },
+  "status": "PASS"
+}

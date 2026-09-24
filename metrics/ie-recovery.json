@@ -1,0 +1,48 @@
+{
+  "class": "INSUFFICIENT_EVIDENCE",
+  "development": {
+    "E026_macro_f1": 0.42650080500184107,
+    "E026_recall": 0.8426666666666667,
+    "E028_recall_floor": 0.5,
+    "E028_selected_recall": 0.5633333333333334,
+    "floor_passed": true
+  },
+  "external": {
+    "all": {
+      "E025_B_E023_recall": 0.0,
+      "E028_B_E028_recall": 0.5657948788169246
+    },
+    "by_benchmark": {
+      "AVERITEC": {
+        "E025_B_E023": 0.0,
+        "E028_B_E028": 0.4
+      },
+      "FACTKG": {
+        "E025_B_E023": 0.0,
+        "E028_B_E028": 0.0
+      },
+      "FEVER": {
+        "E025_B_E023": 0.0,
+        "E028_B_E028": 0.0
+      },
+      "FEVER2": {
+        "E025_B_E023": 0.0,
+        "E028_B_E028": 0.0
+      },
+      "SCIFACT": {
+        "E025_B_E023": 0.0,
+        "E028_B_E028": 0.0
+      },
+      "VITAMINC": {
+        "E025_B_E023": 0.0,
+        "E028_B_E028": 0.5665932856356631
+      }
+    },
+    "clean": {
+      "E025_B_E023_recall": 0.0,
+      "E028_B_E028_recall": 0.5665932856356631
+    }
+  },
+  "identity": "E028-ie-recovery-v1",
+  "interpretation": "IE recovery is assessed on the same paired examples and separately on the preregistered VitaminC development gate; binary benchmarks have zero IE support by construction where applicable."
+}

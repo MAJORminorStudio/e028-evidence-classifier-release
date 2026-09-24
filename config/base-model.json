@@ -1,0 +1,9 @@
+{
+  "acquisition_requirement": "Acquire the upstream base model at this exact revision under its own license; local inference requires a CUDA-capable runtime.",
+  "base_weights_included": false,
+  "hidden_size": 4096,
+  "model_family": "Qwen3-8B-Base",
+  "model_id": "Qwen/Qwen3-8B-Base",
+  "num_labels": 3,
+  "revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4"
+}

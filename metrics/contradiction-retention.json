@@ -1,0 +1,216 @@
+{
+  "benchmarks": {
+    "AVERITEC": {
+      "E025_B_E023": {
+        "contradiction_recall": 0.4065573770491803,
+        "correct_contradicted": 124,
+        "false_contradiction_rate_on_non_contradicted": 0.044585987261146494,
+        "predicted_contradicted": 131,
+        "support": 305
+      },
+      "E028_A_VANILLA": {
+        "contradiction_recall": 0.7081967213114754,
+        "correct_contradicted": 216,
+        "false_contradiction_rate_on_non_contradicted": 0.12101910828025478,
+        "predicted_contradicted": 235,
+        "support": 305
+      },
+      "E028_B_E028": {
+        "contradiction_recall": 0.7934426229508197,
+        "correct_contradicted": 242,
+        "false_contradiction_rate_on_non_contradicted": 0.16560509554140126,
+        "predicted_contradicted": 268,
+        "support": 305
+      },
+      "E028_minus_E025_B_contradiction_recall": 0.38688524590163936,
+      "exposure": "KNOWN_PRIOR_EXPOSURE"
+    },
+    "FACTKG": {
+      "E025_B_E023": {
+        "contradiction_recall": 0.4432748538011696,
+        "correct_contradicted": 3032,
+        "false_contradiction_rate_on_non_contradicted": 0.12091503267973856,
+        "predicted_contradicted": 3809,
+        "support": 6840
+      },
+      "E028_A_VANILLA": {
+        "contradiction_recall": 0.42383040935672517,
+        "correct_contradicted": 2899,
+        "false_contradiction_rate_on_non_contradicted": 0.10550887021475257,
+        "predicted_contradicted": 3577,
+        "support": 6840
+      },
+      "E028_B_E028": {
+        "contradiction_recall": 0.8119883040935673,
+        "correct_contradicted": 5554,
+        "false_contradiction_rate_on_non_contradicted": 0.37675070028011204,
+        "predicted_contradicted": 7975,
+        "support": 6840
+      },
+      "E028_minus_E025_B_contradiction_recall": 0.36871345029239766,
+      "exposure": "CLEAN"
+    },
+    "FEVER": {
+      "E025_B_E023": {
+        "contradiction_recall": 0.6943813418143269,
+        "correct_contradicted": 4585,
+        "false_contradiction_rate_on_non_contradicted": 0.025018953752843062,
+        "predicted_contradicted": 4750,
+        "support": 6603
+      },
+      "E028_A_VANILLA": {
+        "contradiction_recall": 0.545055277903983,
+        "correct_contradicted": 3599,
+        "false_contradiction_rate_on_non_contradicted": 0.014859742228961335,
+        "predicted_contradicted": 3697,
+        "support": 6603
+      },
+      "E028_B_E028": {
+        "contradiction_recall": 0.9056489474481296,
+        "correct_contradicted": 5980,
+        "false_contradiction_rate_on_non_contradicted": 0.11478392721758908,
+        "predicted_contradicted": 6737,
+        "support": 6603
+      },
+      "E028_minus_E025_B_contradiction_recall": 0.21126760563380276,
+      "exposure": "KNOWN_PRIOR_EXPOSURE"
+    },
+    "FEVER2": {
+      "E025_B_E023": {
+        "contradiction_recall": 0.5,
+        "correct_contradicted": 196,
+        "false_contradiction_rate_on_non_contradicted": 0.20103092783505155,
+        "predicted_contradicted": 274,
+        "support": 392
+      },
+      "E028_A_VANILLA": {
+        "contradiction_recall": 0.45408163265306123,
+        "correct_contradicted": 178,
+        "false_contradiction_rate_on_non_contradicted": 0.16752577319587628,
+        "predicted_contradicted": 243,
+        "support": 392
+      },
+      "E028_B_E028": {
+        "contradiction_recall": 0.8112244897959183,
+        "correct_contradicted": 318,
+        "false_contradiction_rate_on_non_contradicted": 0.37371134020618557,
+        "predicted_contradicted": 463,
+        "support": 392
+      },
+      "E028_minus_E025_B_contradiction_recall": 0.3112244897959183,
+      "exposure": "CLEAN"
+    },
+    "SCIFACT": {
+      "E025_B_E023": {
+        "contradiction_recall": 0.25,
+        "correct_contradicted": 16,
+        "false_contradiction_rate_on_non_contradicted": 0.008064516129032258,
+        "predicted_contradicted": 17,
+        "support": 64
+      },
+      "E028_A_VANILLA": {
+        "contradiction_recall": 0.4375,
+        "correct_contradicted": 28,
+        "false_contradiction_rate_on_non_contradicted": 0.024193548387096774,
+        "predicted_contradicted": 31,
+        "support": 64
+      },
+      "E028_B_E028": {
+        "contradiction_recall": 0.640625,
+        "correct_contradicted": 41,
+        "false_contradiction_rate_on_non_contradicted": 0.03225806451612903,
+        "predicted_contradicted": 45,
+        "support": 64
+      },
+      "E028_minus_E025_B_contradiction_recall": 0.390625,
+      "exposure": "KNOWN_PRIOR_EXPOSURE"
+    },
+    "VITAMINC": {
+      "E025_B_E023": {
+        "contradiction_recall": 0.6175875178985829,
+        "correct_contradicted": 12508,
+        "false_contradiction_rate_on_non_contradicted": 0.15470530958245032,
+        "predicted_contradicted": 17910,
+        "support": 20253
+      },
+      "E028_A_VANILLA": {
+        "contradiction_recall": 0.45558682664296646,
+        "correct_contradicted": 9227,
+        "false_contradiction_rate_on_non_contradicted": 0.07257002119250816,
+        "predicted_contradicted": 11761,
+        "support": 20253
+      },
+      "E028_B_E028": {
+        "contradiction_recall": 0.8710314521305486,
+        "correct_contradicted": 17641,
+        "false_contradiction_rate_on_non_contradicted": 0.18079500544131966,
+        "predicted_contradicted": 23954,
+        "support": 20253
+      },
+      "E028_minus_E025_B_contradiction_recall": 0.25344393423196565,
+      "exposure": "CLEAN"
+    }
+  },
+  "exposure_groups": {
+    "CLEAN": {
+      "E025_B_E023": {
+        "contradiction_recall": 0.5725304711660906,
+        "correct_contradicted": 15736,
+        "false_contradiction_rate_on_non_contradicted": 0.14993290520463912,
+        "predicted_contradicted": 21993,
+        "support": 27485
+      },
+      "E028_A_VANILLA": {
+        "contradiction_recall": 0.44766236128797526,
+        "correct_contradicted": 12304,
+        "false_contradiction_rate_on_non_contradicted": 0.07852487299913735,
+        "predicted_contradicted": 15581,
+        "support": 27485
+      },
+      "E028_B_E028": {
+        "contradiction_recall": 0.855484809896307,
+        "correct_contradicted": 23513,
+        "false_contradiction_rate_on_non_contradicted": 0.21276238857471486,
+        "predicted_contradicted": 32392,
+        "support": 27485
+      },
+      "benchmarks": [
+        "FEVER2",
+        "VITAMINC",
+        "FACTKG"
+      ],
+      "n": 69217
+    },
+    "KNOWN_PRIOR_EXPOSURE": {
+      "E025_B_E023": {
+        "contradiction_recall": 0.677710843373494,
+        "correct_contradicted": 4725,
+        "false_contradiction_rate_on_non_contradicted": 0.025159976730657358,
+        "predicted_contradicted": 4898,
+        "support": 6972
+      },
+      "E028_A_VANILLA": {
+        "contradiction_recall": 0.5512048192771084,
+        "correct_contradicted": 3843,
+        "false_contradiction_rate_on_non_contradicted": 0.017452006980802792,
+        "predicted_contradicted": 3963,
+        "support": 6972
+      },
+      "E028_B_E028": {
+        "contradiction_recall": 0.8983075157773953,
+        "correct_contradicted": 6263,
+        "false_contradiction_rate_on_non_contradicted": 0.11445607911576498,
+        "predicted_contradicted": 7050,
+        "support": 6972
+      },
+      "benchmarks": [
+        "FEVER",
+        "SCIFACT",
+        "AVERITEC"
+      ],
+      "n": 13848
+    }
+  },
+  "identity": "E028-contradiction-retention-v1",
+  "label": "CONTRADICTED"
+}

@@ -1,0 +1,117 @@
+{
+  "experiment": "E031",
+  "retrieval_date": "2026-09-24",
+  "disclaimer": "This is a provenance and publication audit, not legal advice. URLs are authoritative source locations used for the audit; individual records and underlying papers may carry additional terms.",
+  "sources": [
+    {
+      "id": "qwen3-base",
+      "name": "Qwen3-8B-Base model card",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-Base",
+      "roles": ["base_model"],
+      "license_or_terms": "Apache-2.0",
+      "authoritative_observation": "The model card identifies the model license as Apache-2.0.",
+      "weight_language": "The model card does not expressly resolve redistribution of this project's separately trained adapter or classifier head.",
+      "public_release_treatment": "Reference the pinned revision; do not redistribute Qwen base weights."
+    },
+    {
+      "id": "qwen3-official",
+      "name": "Qwen3 official repository",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "roles": ["base_model", "upstream_code"],
+      "license_or_terms": "Apache-2.0 for open-weight Qwen3 models",
+      "authoritative_observation": "The official repository states that open-weight Qwen3 models are released under Apache 2.0.",
+      "weight_language": "No project-specific statement about this E028 adapter/head.",
+      "public_release_treatment": "Preserve upstream attribution and revision; omit base weights."
+    },
+    {
+      "id": "apache-2",
+      "name": "Apache License 2.0 text",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0",
+      "roles": ["license_reference"],
+      "license_or_terms": "Apache-2.0",
+      "authoritative_observation": "The license grants broad rights for covered work subject to its notice, attribution, patent, and disclaimer conditions.",
+      "weight_language": "It does not answer whether upstream data terms attach to separately learned parameters."
+    },
+    {
+      "id": "qasper",
+      "name": "QASPER dataset card",
+      "url": "https://huggingface.co/datasets/allenai/qasper/blob/main/README.md",
+      "roles": ["training_source"],
+      "license_or_terms": "CC BY 4.0 for the dataset card's dataset terms; underlying paper rights may be source-specific",
+      "authoritative_observation": "QASPER describes full-text scientific papers and identifies the dataset license as CC BY 4.0; the papers are extracted from S2ORC.",
+      "weight_language": "No express permission or prohibition for trained adapter/head redistribution."
+    },
+    {
+      "id": "s2orc",
+      "name": "S2ORC official repository",
+      "url": "https://github.com/allenai/s2orc",
+      "roles": ["training_dependency"],
+      "license_or_terms": "ODC-By 1.0 for S2ORC material, with source-paper rights potentially applicable",
+      "authoritative_observation": "The official repository identifies S2ORC's database terms and explains its scientific-paper corpus provenance.",
+      "weight_language": "No express permission or prohibition for trained adapter/head redistribution."
+    },
+    {
+      "id": "vitaminc-code",
+      "name": "VitaminC official repository code license",
+      "url": "https://github.com/TalSchuster/VitaminC/blob/main/LICENSE",
+      "roles": ["training_source", "upstream_code"],
+      "license_or_terms": "MIT for repository code",
+      "authoritative_observation": "The repository code license is MIT.",
+      "weight_language": "The code license does not by itself license the dataset annotations or resolve learned-weight redistribution."
+    },
+    {
+      "id": "vitaminc-data",
+      "name": "VitaminC official data license",
+      "url": "https://github.com/TalSchuster/VitaminC/blob/main/DATA_LICENSE",
+      "roles": ["training_source", "evaluation_source"],
+      "license_or_terms": "Mixed/source-dependent data terms; Wikipedia material remains under applicable article terms, with CC BY-SA 3.0 fallback stated for annotations where Wikipedia terms are unavailable",
+      "authoritative_observation": "The data notice says annotations incorporate Wikipedia material and synthetic annotations use or modify FEVER examples; it describes applicable Wikipedia terms or CC BY-SA 3.0 fallback for annotations.",
+      "weight_language": "No express permission or prohibition for trained adapter/head redistribution; the notice does not state that its annotation share-alike language attaches to learned parameters."
+    },
+    {
+      "id": "fever",
+      "name": "FEVER official dataset page",
+      "url": "https://fever.ai/dataset/fever.html",
+      "roles": ["evaluation_source", "vitaminc_dependency"],
+      "license_or_terms": "Wikipedia-derived dataset; follow the official page's linked dataset terms",
+      "authoritative_observation": "The official page describes FEVER claims generated from Wikipedia.",
+      "weight_language": "Evaluation-only for E028; it did not provide gradients to the released weights."
+    },
+    {
+      "id": "fever2",
+      "name": "FEVER2 official task page",
+      "url": "https://fever.ai/2019/task.html",
+      "roles": ["evaluation_source"],
+      "license_or_terms": "Official FEVER2 task material; source-specific terms apply",
+      "authoritative_observation": "The official FEVER site documents the FEVER2 task and its benchmark material.",
+      "weight_language": "Evaluation-only for E028; it did not provide gradients to the released weights."
+    },
+    {
+      "id": "scifact",
+      "name": "SciFact official repository license",
+      "url": "https://github.com/allenai/scifact/blob/master/LICENSE.md",
+      "roles": ["evaluation_source"],
+      "license_or_terms": "Claims/evidence annotations CC BY 4.0; corpus abstracts are S2ORC material under ODC-By 1.0; code Apache-2.0",
+      "authoritative_observation": "The official license file separates annotation, corpus, and code terms.",
+      "weight_language": "Evaluation-only for E028; no SciFact text or labels contributed gradients."
+    },
+    {
+      "id": "averitec",
+      "name": "AVeriTeC official repository and dataset card",
+      "url": "https://github.com/aic-factcheck/aic_averitec",
+      "roles": ["evaluation_source"],
+      "license_or_terms": "CC BY-NC 4.0 for the dataset/baseline material as identified by the official project materials",
+      "authoritative_observation": "The official project identifies AVeriTeC task material and the dataset card records CC-BY-NC-4.0 terms.",
+      "weight_language": "Evaluation-only for E028; no AVeriTeC rows contributed gradients."
+    },
+    {
+      "id": "factkg",
+      "name": "FactKG official repository",
+      "url": "https://github.com/jiho283/FactKG",
+      "roles": ["evaluation_source"],
+      "license_or_terms": "CC BY-NC-SA 4.0",
+      "authoritative_observation": "The official repository identifies the FactKG dataset and its non-commercial share-alike terms.",
+      "weight_language": "Evaluation-only for E028; no FactKG rows contributed gradients."
+    }
+  ]
+}

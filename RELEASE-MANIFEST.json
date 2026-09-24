@@ -1,0 +1,96 @@
+{
+  "identity": "E030-release-manifest-v1",
+  "release_version": "v1.0.0",
+  "release_date": "2026-09-24",
+  "release_status": "RELEASE_PARTIAL",
+  "publication_status": "BLOCKED_LICENSE_AND_HF_AUTH",
+  "base_model": {
+    "id": "Qwen/Qwen3-8B-Base",
+    "revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+    "weights_included": false
+  },
+  "selected_checkpoint": {
+    "experiment": "E028",
+    "epoch": 2,
+    "global_step": 198
+  },
+  "artifacts": {
+    "adapter": {
+      "path": "adapter/adapter_model.safetensors",
+      "sha256": "b8a6dfd754f1cb766d710697d03c5b26a8316abc085c9c1dc999b942e81e5f8c"
+    },
+    "classifier_head": {
+      "path": "classifier/classifier_head.safetensors",
+      "sha256": "cea444d633653afbb0697c0357717fc0f6014b25bc0ca4965660807aee77c5a4"
+    },
+    "formatter": {
+      "path": "scripts/canonical_formatter.py",
+      "sha256": "75134353bbed6fe24104cc9afeb5d5e5c4b4defc130ea6cfba732bf2359af605"
+    },
+    "model_card": {
+      "path": "MODEL_CARD.md",
+      "sha256": "3a2725033bc3ef48a9734641e36af6141445d41815ff41fd3d332c1a14c65635"
+    },
+    "dataset_card": {
+      "path": "DATASET_CARD.md",
+      "sha256": "4967b5bfb93a29aa1546aacb08553337fa45e7068f2c4d1dcfe3d4b36a1d4e5d"
+    },
+    "results": {
+      "path": "RESULTS.md",
+      "sha256": "f31f886599e9d1af97337332fded879e5175af92c47e66d8876e6eb2fca7f4e6"
+    },
+    "technical_report": {
+      "path": "TECHNICAL-REPORT.md",
+      "sha256": "cb25890a5b70c0faf6413960e247bc120001194109b4c4438c834101d0904cba"
+    },
+    "scripts": {
+      "scripts/canonical_formatter.py": "75134353bbed6fe24104cc9afeb5d5e5c4b4defc130ea6cfba732bf2359af605",
+      "scripts/inference.py": "95dcf824444b1ee687a6406aa8b5f7b0f29f148e92394e33b0606e2c407ddcbd",
+      "scripts/prepare_data.py": "e904a6272977fedab701811f55d3a2e3eb253965a8f1d9821959e75a0598ac61",
+      "scripts/validate_artifact.py": "adf313faac59582e796e131726495872253b7bb5622c1acb32f56c6047d22f72",
+      "scripts/train_qwen3_classifier.py": "7c0bbc2d6eb0cc73aa16db59074e7afcde3a5087407b2c41fc79a9c5f9d88def",
+      "scripts/e026_train.py": "2fa6635a627ce90ea533a0fcdb005c1bf2b3e66e2ba4305bb676dca149372fbb"
+    }
+  },
+  "gates": {
+    "LICENSE_PASS": false,
+    "SECURITY_PASS": true,
+    "PACKAGE_PASS": true,
+    "CUDA_SMOKE_PASS": true,
+    "CHECKSUM_PASS": true
+  },
+  "package": {
+    "bytes_before_release_manifest_and_checksums": 186404052,
+    "base_weights_included": false,
+    "raw_restricted_rows_included": false
+  },
+  "cuda_smoke": {
+    "status": "PASS",
+    "formatter_parity": "PASS",
+    "case_count": 3
+  },
+  "compute": {
+    "gpu": "NVIDIA L40S",
+    "region": "US-TX-4",
+    "hourly_rate_usd": 1.09,
+    "pod_wall_time_seconds": 686,
+    "estimated_cost_usd": 0.207706,
+    "pod_deleted": true
+  },
+  "immutability": {
+    "status": "PASS",
+    "e028_checksum_count": 71,
+    "e029_checksum_count": 31,
+    "canonical_release_checksum_count": 41,
+    "e028_modified": false,
+    "e029_modified": false,
+    "adapter_sha256": "b8a6dfd754f1cb766d710697d03c5b26a8316abc085c9c1dc999b942e81e5f8c",
+    "classifier_head_sha256": "cea444d633653afbb0697c0357717fc0f6014b25bc0ca4965660807aee77c5a4"
+  },
+  "publication": {
+    "huggingface": "HF_UPLOAD_REQUIRES_USER_AUTH",
+    "github": "STAGED_NOT_PUBLISHED",
+    "website": "STAGED_NOT_PUBLISHED"
+  },
+  "status": "RELEASE_PARTIAL"
+}
